@@ -1,6 +1,8 @@
 :root {
-    --primary: #2563eb;
-    --primary-dark: #1d4ed8;
+    --primary: #15803d;
+    --primary-dark: #14532d;
+    --accent: #2563eb;
+    --accent-dark: #1d4ed8;
     --danger: #dc2626;
     --success: #16a34a;
     --bg: #f4f6fb;
@@ -23,11 +25,18 @@ header.app-header {
     background: linear-gradient(135deg, var(--primary), var(--primary-dark));
     color: #fff;
     padding: 24px 32px;
+    text-align: center;
+    max-width: 1100px;
+    margin: 24px auto 0;
+    border-radius: 10px;
 }
-
 header.app-header h1 {
     margin: 0;
     font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 header.app-header p {
@@ -68,8 +77,8 @@ main {
     font-weight: 600;
 }
 
-.btn-primary { background: var(--primary); color: #fff; }
-.btn-primary:hover { background: var(--primary-dark); }
+.btn-primary { background: var(--accent); color: #fff; }
+.btn-primary:hover { background: var(--accent-dark); }
 .btn-danger { background: var(--danger); color: #fff; }
 .btn-secondary { background: #e5e7eb; color: var(--text); }
 .btn-sm { padding: 6px 10px; font-size: 0.8rem; }
@@ -162,3 +171,4 @@ footer {
     padding: 40px 20px;
     color: var(--muted);
 }
+
